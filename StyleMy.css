@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+body {
+    font-family: 'Noto Serif Balinese', serif;
+    background-color: #A6B1E1;
+    display: flex;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.back a {
+    color: #212121;
+    padding: 50px 12px;
+    margin: 280px;
+    border-radius: 30px;
+    border: .5px solid var(--nav--);
+    background: var(--nav--);
+    font-size: 25px;
+    transition: .2s ease;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+.back a:hover {
+    border:  .5px solid var(--gtau--);
+    background: var(--gtau--);
+    color: var(--second-bg-color);
+}
+.container {
+    width: 590px;
+    height: 100vh;
+    /* vh =  view height (full layar) */
+    margin: 50px auto;
+}
+p {
+    padding: 3px;
+    padding-top: 9px;
+    padding-left: 25px ;
+    background-color: #7fe1fa;
+    margin-bottom: 3px;
+    border-radius: 30px;
+}
+.header {
+    padding: 15px;
+    color: #7fe1fa;
+    background-color: #5d6cb8;
+    border-radius: 1rem;
+    margin-bottom: 13px;
+    cursor: context-menu;
+}
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.title i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.descrip {
+    font-size: 13px;
+}
+.card {
+    background-color: #6576cc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 22px;
+    cursor: context-menu;
+}
+.inpuut {
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+}
+::placeholder {
+    color: #2A528A;
+    font-size: 13px;
+}
+.text-right {
+    text-align: right;
+}
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    /* merubah kursor menjadi tangan jika diarahkan ke buttonnnya */
+    color: #2A528A;
+}
+.Task-item {
+    display: flex;
+    justify-content: space-between;
+}
+.edit-task {
+    color: green;
+    font-size: 20px;
+}
+.delete-task {
+    color: red;
+    font-size: 20px;
+}
+.done {
+    text-decoration: line-through;
+    color: #F4EEFF;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 530px) {
+    .container {
+        width: 100%;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+    p {
+        font-size: 14.5px;
+        padding-left: 23px;
+    }
+}
+@media (max-width: 335px) {
+    .container {
+        width: 100%;
+    }
+    p {
+        font-size: 14px;
+    }
+    .card {
+        font-size: 20px;
+    }
+}
+@media (max-width: 300px) {
+    .container {
+        width: 100%;
+    }
+    p {
+        font-size: 13px;
+    }
+    .header {
+        font-size: 14px;
+    }
+    .card {
+        font-size: 17px;
+    }
+}
